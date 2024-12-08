@@ -4,7 +4,7 @@ project(templ)
 set(CMAKE_CXX_STANDARD 23)
 
 set(NAME example)
-#find_package(Boost)
+find_package(Boost)
 
 add_executable(${NAME}
   main.cpp

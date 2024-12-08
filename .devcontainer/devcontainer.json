@@ -1,11 +1,11 @@
 {
 	//"image": "mcr.microsoft.com/devcontainers/base:dev-ubuntu-24.04",
-	//"image" : "mcr.microsoft.com/devcontainers/cpp:dev-ubuntu24.04",
-	"image" : "mcr.microsoft.com/vscode/devcontainers/cpp:ubuntu-22.04",
+	"image" : "mcr.microsoft.com/devcontainers/cpp:dev-ubuntu24.04",
+	//"image" : "mcr.microsoft.com/vscode/devcontainers/cpp:ubuntu-22.04",
 	
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/apt-packages:1": {
-			"packages": "clang, clang-format, linux-tools-common, linux-tools-generic, libboost-program-options-dev, linux-tools-6.5.0-1021-azure",
+			"packages": "clang, clang-format, libboost-program-options-dev",
 			"ppas": "ppa:deadsnakes/ppa"
 		}
 	},
@@ -16,7 +16,8 @@
 				"xaver.clang-format",
 				"ms-vscode.cpptools-extension-pack",
 				"twxs.cmake",
-				"ms-vscode.cmake-tools"
+				"ms-vscode.cmake-tools",
+				"llvm-vs-code-extensions.vscode-clangd"
 			]
 		}
 	}

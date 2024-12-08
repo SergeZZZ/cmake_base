@@ -52,5 +52,13 @@
         "stop_token": "cpp"
     },
     "editor.tabSize": 2,
-    "clang-format.fallbackStyle": "Google"
+    "clang-format.fallbackStyle": "Google",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.arguments": [
+        "-log=verbose",
+        "-pretty",
+        "--background-index",
+        //"--query-driver=/bin/arm-buildroot-linux-gnueabihf-g++", //for cross compile usage
+        "--compile-commands-dir=build/"
+    ]
 }
