@@ -5,7 +5,7 @@
 	
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/apt-packages:1": {
-			"packages": "clang, clang-format, libboost-program-options-dev",
+			"packages": "clang, clang-format, libboost-program-options-dev, libboost-all-dev",
 			"ppas": "ppa:deadsnakes/ppa"
 		}
 	},
