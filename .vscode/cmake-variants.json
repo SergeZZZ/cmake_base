@@ -1,0 +1,65 @@
+{
+  "buildType": {
+    "default": "debug",
+    "choices": {
+      "debug": {
+        "short": "Debug",
+        "long": "Debug build",
+        "buildType": "Debug",
+        "settings": {
+          "CMAKE_CXX_FLAGS": "-Wall -Wextra -g",
+          "CMAKE_C_FLAGS": "-Wall -Wextra -g"
+        }
+      },
+      "release": {
+        "short": "Release",
+        "long": "Release build",
+        "buildType": "Release",
+        "settings": {
+          "CMAKE_CXX_FLAGS": "-O3",
+          "CMAKE_C_FLAGS": "-O3"
+        }
+      },
+      "relwithdebinfo": {
+        "short": "RelWithDebInfo",
+        "long": "Release build with debug information",
+        "buildType": "RelWithDebInfo",
+        "settings": {
+          "CMAKE_CXX_FLAGS": "-O2 -g",
+          "CMAKE_C_FLAGS": "-O2 -g"
+        }
+      },
+      "minsizerel": {
+        "short": "MinSizeRel",
+        "long": "Minimal size release build",
+        "buildType": "MinSizeRel",
+        "settings": {
+          "CMAKE_CXX_FLAGS": "-Os",
+          "CMAKE_C_FLAGS": "-Os"
+        }
+      },
+      "tsan": {
+        "short": "TSan",
+        "long": "ThreadSanitizer build",
+        "buildType": "Release",
+        "settings": {
+          "CMAKE_CXX_FLAGS": "-fsanitize=thread -g -O2",
+          "CMAKE_C_FLAGS": "-fsanitize=thread -g -O2",
+          "CMAKE_EXE_LINKER_FLAGS": "-fsanitize=thread",
+          "CMAKE_SHARED_LINKER_FLAGS": "-fsanitize=thread"
+        }
+      },
+      "asan": {
+        "short": "ASan",
+        "long": "AddressSanitizer build",
+        "buildType": "Release",
+        "settings": {
+          "CMAKE_CXX_FLAGS": "-fsanitize=address -g",
+          "CMAKE_C_FLAGS": "-fsanitize=address -g",
+          "CMAKE_EXE_LINKER_FLAGS": "-fsanitize=address",
+          "CMAKE_SHARED_LINKER_FLAGS": "-fsanitize=address"
+        }
+      }
+    }
+  }
+}
