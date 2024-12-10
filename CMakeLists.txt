@@ -10,4 +10,5 @@ add_executable(${NAME}
   main.cpp
   )
 
+target_link_libraries(${NAME}  Boost::boost ssl crypto)
 target_compile_options(${NAME} PRIVATE  "-Wall")
